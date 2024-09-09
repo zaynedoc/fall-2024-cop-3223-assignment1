@@ -2,7 +2,7 @@
 #include <math.h>
 #define PI 3.14159
 
-double calculateDistance() //distance = diameter of a circle
+double calculateDistance()
 {
 	double x1;
 	double y1;
@@ -24,12 +24,12 @@ double calculateDistance() //distance = diameter of a circle
 
 double caclulatePerimeter()
 {
-	double diameter = calculateDistance(); //retrieve diameter from distance function
+	double diameter = calculateDistance(); //distance is synonymouse with diameter in this function
 	double perimeter = PI * diameter; //diameter = pi * d
 	
 	printf("The perimeter of the circle is %.2lf units\n\n", perimeter);
 	
-	return 1;
+	return 2;
 }
 
 double calculateArea()
@@ -48,7 +48,7 @@ double calculateWidth()
 	
 	printf("The width of the cricle is %.2lf units wide\n\n", width);
 
-	return 1;
+	return 0;
 }
 
 double calculateHeight()
@@ -57,7 +57,7 @@ double calculateHeight()
 	
 	printf("The height of the cricle is %.2lf units tall\n\n", height);
 
-	return 1;
+	return 0;
 }
 
 int main(void)
@@ -70,11 +70,6 @@ int main(void)
 
 	return 0;
 }
-
-/* 
-compile with -lm flag, allows 'pow' and 'sqrt' math.h functions to work:
-"$gcc -o run fracturing.c -lm"
-*/
 
 /*
 fracturing.c by Zayne Dockery
